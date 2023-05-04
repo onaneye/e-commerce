@@ -1,0 +1,50 @@
+
+
+/* General */
+a{
+    text-decoration: none !important;
+}
+
+a:hover{
+    color: black !important;
+}
+
+body{
+    background-color: #f1e9d7 !important;
+}
+
+/* products info */
+.product-information p{
+    margin-left: 40px;
+}
+
+.page-path{
+    width: 500px;
+    margin-left: 55px;
+}
+
+.page-path h4{
+   font-size: 16px !important; 
+   text-transform: capitalize;
+}
+
+.product-title-head h3{
+    font-weight: bold !important;
+}
+
+.card{
+    border: none !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.card img{
+    height: 300px;
+}
+
+.item-btn{
+    border: none !important;
+    font-size: 15px !important;
+    font-weight: bold;
+}
