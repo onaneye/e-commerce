@@ -246,7 +246,6 @@ window.onclick = function(event) {
 
   function closeModals() {
     $(modal).css("display","none")
-    location.reload()
 }
 
   
@@ -254,3 +253,4 @@ estimateBtn.click(function() {
     $(productMessage).css("display","block")
     location.reload()
  })
+
