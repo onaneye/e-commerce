@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .m{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .m-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+  }
+
+  .modal-img-container{
+    margin-left: 10px;
+    margin-top: 22px;
+    padding: 0;
+  }
+
+  .related-img-container{
+    margin: 0 auto;
+    width: 400px !important;
+  }
+
+  .show {
+    display: block;
+  }
+
+
+.related-img{
+    width: 130px;
+    margin: 8px 5px 0px 0px;
+}
+
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #e02020;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+    </style>
+</head>
+
+<div id="myModal" class="m">
+   <span class="close  fas fa-xmark"></span>
+    <!-- Modal content -->
+ <div class="m-content"  id="m-content">
+   <div class="d-lg-flex d-md-block">
+       <div class="w-50 modal-img-container">
+         <img src="" id="modal-img" class="" alt="" srcset=""><br>
+            <div class="d-flex col-lg-5 related-img-container">
+             <img src="../images/buffets images/Picture1.jpg" alt="cat1"  class="category1" id="cat1">
+             <img src="../images/buffets images/Picture2.jpg" alt="cat1"  class="category1" id="cat1">
+             <img src="../images/buffets images/Picture4.jpg" alt=""  class="category2" id="cat2">
+             <img src="../images/buffets images/Picture5.jpg" alt=""  class="category2" id="cat2">
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+
+<body>
+    <div id="image-gallery">
+        <div class="card">
+            <img src="../images/buffets images/Picture1.jpg"   alt="cat1" class="category1"  id="cat1">
+            <p>ggsgshh</p>
+        </div>
+        <div class="card">
+            <img src="../images/buffets images/Picture2.jpg"   alt="cat1" class="category1"  id="cat1">
+        </div>
+        <div class="card">
+            <img src="../images/buffets images/Picture4.jpg" class="category2"  id="cat2">
+        </div>
+        <div class="card">
+            <img src="../images/buffets images/Picture5.jpg" class="category2"  id="cat2">
+        </div>
+    </div>
+
+         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+         <script   src="data.js"></script>
+      
+</body>
+</html>
