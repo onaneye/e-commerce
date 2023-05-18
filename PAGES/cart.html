@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2377a3245e.js" crossorigin="anonymous"></script>
+    <title>:Cart</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="../index.html"><h2>Posh 'n' Spice</h2></a>
+    </div>
+<!-- navbar section -->
+    <nav class="d-lg-flex  justify-content-between align-items-center mb-3 nav-bg">
+        <div class="show-menu pb-2">
+            <h3 class="fw-bold"> <i class="fas fa-bars"></i> Menu</h3>
+            <div class="nav-col-item" id="collapse">
+                <ul>
+                    <li>
+                        <a href="./product.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="">Quick Add</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="input-group  d-lg-flex  d-none input-container">
+            <input type="search" class="form-control w-50" placeholder="Search Products" aria-label="Search" aria-describedby="search-addon" /> <button type="button" class="btn btn-dark">Search</button>
+      
+         </div>
+      
+
+        <div class="nav-links">
+            <ul class="d-lg-flex  d-none justify-content-between align-items-lg-start">
+                <li>
+                    <a href="#"><i class="fas fa-cart-shopping"></i> Cart</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-circle-question"></i> help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="h-100   " style="background-color: #eee; ">
+        <div class="container  h-100 py-5  "  >
+          <div class="row d-flex justify-content-center align-items-center h-100    carts">
+            <div class="container d-flex justify-content-between align-items-center mb-3  col-10">
+              <h3 class="fw-bold mb-0 text-black  shop-h">Shopping <span  class="text-success">Cart</span> </h3>
+            </div>        
+           <div class="col-10 cart-body"></div>
+
+           <div class="col-10 ">
+            <div class="col-lg-12 summary">
+                <div class="card mb-4   col-lg-12">
+                     <div class="card-header py-3">
+                        <h5 class="mb-0">Summary</h5>
+                      </div>
+                    <div class="card-body ">
+                      <div class="quantity">
+                        <div class="d-flex">
+                            <h6 class="font-weight-bold p-1">How many days: </h6>
+                            <div class="qtySelector text-center">
+                                <i class="fa fa-minus decreaseQty bg-dark text-white"></i>
+                                <input type="text" class="qtyValue" id="days-qty-value" value="1" />
+                                <i class="fa fa-plus increaseQty bg-dark text-white"></i>
+                            </div>              
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                            Products
+                            <span>4 items</span>
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                            <div>
+                              <strong>Total amount</strong>
+                              <strong>
+                                <p class="mb-0">(including VAT)</p>
+                              </strong>
+                            </div>
+                            <span><strong id="total-text-price" class="text-success"></strong></span>
+                          </li>
+                        </ul>
+            
+                        <button type="button" class="btn btn-dark btn-lg btn-block">
+                          Go to checkout
+                        </button>
+                     </div>                       
+                </div>
+            </div>
+
+         </div> 
+        </div>
+    </section>
+
+   <!-- footer -->
+
+   <section class="h-100 " style="background-color: #eee;">
+    <div class="container h-100 py-5  ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+         </div>
+    </div>
+   </section>
+
+   <footer class="footer bg-dark text-white pt-5 pb-4 mt-4">
+    <div class="container  text-md-left">
+        <div class="row text-md-left">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">For You</h5>
+                <p><a href="" style="text-decoration: none;" class="text-white">Log in/register</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">track your order</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">My account</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">What's New</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">Saved Carts</a></p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About US</h5>
+                <p><a href=""  style="text-decoration: none;" class="text-white">bout party rental ltd</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">Designs studio locations</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">Warehouse location</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">Testimoniaks</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">Blogs</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">Sustainiability</a></p>
+                <p><a href="" style="text-decoration: none;" class="text-white">Covid Advisory</a></p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Online help</h5>
+                <p><a href="" style="text-decoration: none;" class="text-white">Hippo Help center</a></P>
+                <p><a href="" style="text-decoration: none;" class="text-white">Event Rental inspirations</a></P>
+                <p><a href="" style="text-decoration: none;" class="text-white">Product instuctionals video</a></P>
+                <p><a href="" style="text-decoration: none;" class="text-white">Order linel swiches</a></P>
+                <p><a href="" style="text-decoration: none;" class="text-white">Event rental Glossary</a></P>
+                <p><a href="" style="text-decoration: none;" class="text-white">Brand Resources</a></P>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us </h5>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Live Chat</a></p>
+            </div>
+        </div>
+        <div class="form w-50  bg-light p-4 mx-lg-auto">
+          <label for="email" class="text- text-dark font-weight-bold ">Join the world of party rentals</label>
+          <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+          <button type="submit" class="btn btn-dark mt-2">Submit</button>
+          <small id="emailHelpId" class="form-text text-muted">Help text</small>
+        </div>
+        <div class="social-handles w-50 mt-4 mx-lg-auto">
+            <h5 class="text-uppercase text-center">Hang out with us</h5>
+            <div class="mx-lg-auto w-100 w-lg-100 text-warning text-center">
+             <a href=""><i class="fab fa-youtube"></i></a>
+             <a href=""><i class="fab fa-twitter"></i></a>
+             <a href=""><i class="fab fa-instagram"></i></a>
+             <a href=""><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </div> 
+</footer>
+
+  <div class="footer-menu fixed-bottom">
+    <i class="fas fa-user"></i>
+    <i class="fas fa-comment"></i>
+    <i class="fas fa-cart-shopping"></i>
+    <i class="fas fa-question"></i>
+  </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/modals.js"></script>
+<script src="../js/cart.js"></script>
+</body>
+</html>
