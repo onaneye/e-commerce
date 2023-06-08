@@ -208,8 +208,7 @@ estimateBtn.click(function() {
 // Add	to	cart	funtionality
 
 $('#btn-estimate').click(function() {
-	alert("your	product	has	been added to cart")
-	location.reload()
+	$(this).text('Added	to cart')
 	var	productquaty	=	$(this).closest('body').find('.qtySelector .qtyValue').val()
 	var	productQuantityNum =parseInt(productquaty)
 	console.log(infomationSize.innerText)
@@ -241,5 +240,9 @@ $('#btn-estimate').click(function() {
 		localStorage.setItem('cart', JSON.stringify(cart));
   
 	console.log(item.id)
+})
+
+$('#btn-shop').click(function(){
+	location.reload()
 })
 

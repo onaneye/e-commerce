@@ -65,7 +65,7 @@ $(document).ready(function() {
 
     }
   if (cart.length===0) {
-    $('.container .shop-h').text('No Added Cart')
+    $('.container .shop-h').text('Your  cart  is  empty')
     $('.checkout-display').html('<div><h1>You have no product in your cart</p></h1>')
     
   }
@@ -85,7 +85,7 @@ $(document).ready(function() {
     var cart = JSON.parse(localStorage.getItem('cart')) || [];
     var itemsHtml = `
       <thead>
-        <tr class="gradient-brand-color text-white">
+        <tr class="bg-dark  text-white">
           <th scope="col">Product</th>
           <th scope="col">Price</th>
           <th scope="col">Size</th>
@@ -148,7 +148,7 @@ $(document).ready(function() {
 
     if (cart.length === 0) {
       updateCartUI()
-      $('.container .shop-h').text('No Added Cart')
+      $('.container .shop-h').text('Your  cart  is  empty')
       $('.summary').css("display","none")
 
     }else{
