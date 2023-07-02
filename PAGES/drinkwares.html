@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinkware:home</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2377a3245e.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  .card{
+    height: 100%    !important;
+}
+
+</style>
+<body>
+   
+
+<!-- The Modal -->
+
+<div class="logo">
+  <a href="../index.html"><h2>Posh 'n' Spice</h2></a>
+</div>
+<!-- navbar section -->
+<nav class="d-lg-flex  justify-content-between align-items-center mb-3 nav-bg">
+  <div class="  show-menu pb-2">
+      <h3 class="fw-bold  container"> <i class="fas fa-bars"></i> Menu</h3>
+      <div class="nav-col-item" id="collapse">
+          <ul>
+              <li>
+                  <a href="./product.html">Product</a>
+              </li>
+              <li>
+                  <a href="">Quick Add</a>
+              </li>
+              <li>
+                  <a href="">Blog</a>
+              </li>
+          </ul>
+      </div>
+      
+  </div>
+
+  <div class="input-group  d-lg-flex  d-none input-container">
+    <input type="search" class="form-control w-50" placeholder="Search Products" aria-label="Search" aria-describedby="search-addon" /> <button type="button" class="btn btn-dark">Search</button>
+ </div>
+
+
+  <div class="nav-links">
+      <ul class="d-lg-flex  d-none justify-content-between align-items-lg-start">
+          <li>
+              <a href="./cart.html" class="d-flex"><i class="fas fa-cart-shopping"></i> Cart <div id="cartqty"  class="cartqty bg-success  text-white  text-center"><span class="cart-value">0</span></div></a>
+          </li>
+          <li>
+              <a href="#"><i class="fa-regular fa-circle-question"></i> help</a>
+          </li>
+      </ul>
+  </div>
+</nav>  
+
+
+<div id="myModal" class="m">
+  <!--   successMODAL -->
+  <div class="bg-success  product-added">
+     <p  class="text-white fw-bold p-3">product added to your cart</p>
+ </div>
+ <span class="close  fas fa-xmark"></span>
+  <!-- Modal content -->
+  <div class="m-content"  id="m-content">
+    <div class="d-lg-flex d-md-block">
+     <div class="w-50 modal-img-container">
+          <img src="" id="modal-img" class="" alt="" srcset=""><br>
+          <div class="d-flex  flex-wrap col-lg-6 related-img-container">
+             <img src="../images/Drinkware/Picture1.jpg" alt=""  class="related-img  category1 1"   id="related-img"    data-description="Drinkware" data-price="10" data-color="Gold" data-material="304 Stainless Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Drinkware/Picture2.jpg" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Drinkware "  data-price="19"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Square">
+             <img src="../images/Drinkware/Picture3.png" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Drinkware"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Drinkware/Picture4.jpg" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Drinkware"  data-price="1O" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">
+             <img src="../images/Drinkware/Picture5.jpg" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Drinkware"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Square" data-id="5">
+             <img src="../images/Drinkware/Picture6.jpg" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Drinkware"  data-price="100"  data-color="Sliver & Gold" data-material="304 Stainless" data-size="9 & 6.5Liters"  data-shape="Square" data-id="6">
+             <img src="../images/Drinkware/Picture7.jpg" alt=""  class="related-img  category3 3"   id="related-img"    data-description="Drinkware"  data-price="105"  data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="7">
+             <img src="../images/Drinkware/Picture8.jpg" alt=""  class="related-img  category3 3"   id="related-img"   data-description="Drinkware" data-price="180"  data-color="Sliver" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Round"  data-id="8">
+             <img src="../images/Drinkware/Picture9.jpg" alt=""  class="related-img  category3 3"   id="related-img"   data-description="Drinkware" data-price="10" data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="9">
+             <img src="../images/Drinkware/Picture10.jpg" alt=""  class="related-img category4 4"   id="related-img"  data-description="Drinkware"  data-price="20" data-color="Sliver" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="10">
+             <img src="../images/Drinkware/Picture11.jpg" alt=""  class="related-img category4 4"   id="related-img"  data-description="Drinkware"  data-price="80" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="11">
+             <img src="../images/Drinkware/Picture12.jpg" alt=""  class="related-img category4 4"   id="related-img"  data-description="Drinkware"  data-price="40" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="12">
+             <img src="../images/Drinkware/Picture13.jpg" alt=""  class="related-img category5 5"   id="related-img"  data-description="Drinkware"  data-price="10" data-color="white" data-material="304-Stainless" data-size="(weight)"  data-shape=""  data-id="13">
+             <img src="../images/Drinkware/Picture14.jpg" alt=""  class="related-img category5 5"   id="related-img"  data-description="Drinkware"  data-price="60" data-color="white" data-material="304-Stainless" data-size="(weight)"  data-shape=""  data-id="14">
+             <img src="../images/Drinkware/Picture15.jpg" alt=""  class="related-img category5 5"   id="related-img"  data-description="Drinkware"data-price="10" data-color="Sliver" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="15">
+             <img src="../images/Drinkware/Picture16.jpg" alt=""  class="related-img category6 6"   id="related-img"  data-description="Drinkware"  data-price="70" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="16">
+             <img src="../images/Drinkware/Picture17.jpg" alt=""  class="related-img category6 6"   id="related-img"  data-description="Drinkware"  data-price="70" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="17">
+             <img src="../images/Drinkware/Picture18.jpg" alt=""  class="related-img category6 6"   id="related-img"  data-description="Drinkware"  data-price="70" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="18">
+             <img src="../images/Drinkware/Picture19.jpg" alt=""  class="related-img category7 7"   id="related-img"  data-description="Drinkware"  data-price="70" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="19">
+          </div>
+     </div>
+
+     <div class="m-4  ">
+        <div  class="product-information">
+           <h2>ADD THIS PRODUCT TO YOUR CART</h2><h3  class="text-success information-name"></h3><span><p class="text-success fw-bold"  id="price"></p></span>
+          <div class="description P-3">
+             <p id="description-text" class="text-muted"></p>
+         </div> 
+         <table class="table table-striped">
+             <thead>
+               <tr>
+                 <th scope="col-2">Spec</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>Material</td>
+                 <td  id="material">Stainless steel</td>
+               </tr>
+               <tr>
+                 <td>Color</td>
+                 <td  id="color">Gold</td>
+               </tr>
+               <tr>
+                 <td  id="length">size</td>
+                 <td  id="size">6L</td>
+               </tr>
+                 <td>shape</td>
+                 <td  id="shape">Round</td>
+               </tr>
+             </tbody>
+           </table>
+
+              <div class="quantity">
+                 <div class="d-flex">
+                     <h5 class="font-weight-bold p-1">Quantity: </h5>
+                     <div class="qtySelector text-center">
+                         <i class="fa fa-minus decreaseQty bg-dark text-white"></i>
+                         <input type="text" class="qtyValue" value="6" />
+                         <i class="fa fa-plus increaseQty bg-dark text-white"></i>
+                     </div>              
+                 </div>
+                 <div class="mt-4">
+                 <button  class="btn btn-dark "  id="btn-estimate">ADD TO ESTIMATE</button>
+                 <button  class="btn btn-success "  id="btn-shop">CONTINUE  SHOPPING</button>
+                 </div>
+              </div> 
+        </div>
+      </div>  
+    </div>
+ </div>
+  </div>
+</div>
+
+
+    <!-- Product-items head information -->
+    <div class="bg-dark text-white d-flex justify-content-between align-items-center p-2 product-information">
+        <p class="pt-3">Price based on Date <strong>03/04/2023</strong> New york</p>
+        <p class="pt-3"><span class="fas fa-pen"></span>Edit</p>
+    </div>
+
+    <div class=" container mt-3 page-path">
+        <h6 class="text-muted">Home  > products  / <span class="text-success"> Drinkware</span></h6>
+    </div>
+
+    <section class="container product-item-section p-2 mt-5">
+        <div class="product-title-head font-weight-bold">
+            <h3 class="font-weight-bold">Drinkware</h3>
+        </div>
+
+        <div class="row">
+          <!-- start of first section -->
+          <div class="mt-3 col-lg-3">
+            <div class="gg" id="pro-info-card">
+              <div class="description1">
+                <h5>Drinkware <span  class="text-success">Dishes</span></h5> 
+                <p data-value="category1">Is there anything more classic than a buffet set in GOLD? Our mirror-finish chafing dish collection with a smooth opening and closing effect, adds touch of elegance to any buffet or food station while keeping your dishes at the perfect serving temperature.</p>
+              </div>
+             <button class="1 filter-btn btn m-0 w-100 btn-dark p-2"  data-value="category1"  type="button" data-description="Drinkware" data-price="10" data-color="Gold" data-material="304 Stainless Steel" data-size="6.5 Liters"  data-shape="Round">Inquire</button>
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2 ">
+             <img src="../images/Drinkware/Picture1.jpg" class="category1"   id="category1"  alt="" srcset=""  data-filter="category1" data-value="category1"   data-description="Drinkware" data-price="10" data-color="Gold" data-material="304 Stainless Steel" data-size="6.5 Liters"  data-shape="Round"> 
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture2.jpg" class="category1" alt="" srcset=""  data-value="category1"  data-id="2" data-description="Drinkware "  data-price="19"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Square">
+            </div>
+          </div>
+          <!-- end of first session -->
+
+          
+          <div class="mt-3 col-lg-3"  data-filter="Stainless-gold">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture3.jpg" class="category1" alt="" srcset=""  data-value="category1"  data-id="3" data-description="Drinkware"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+            </div>
+          </div>
+
+          <!-- This is the second segment  -->
+          <div class="mt-3 col-lg-3">
+            <div class="" id="pro-info-card">
+                <div class="description1">
+                  <h5>Square Chaffing <span  class="text-success">Dishes</span></h5>
+                    <p   data-value="category2">Whether it’s a buffet at a wedding or at a birthday celebration, this TWO-TONE bright polished mirror-finish chafing dish will wow your guests. It shimmers and reflects ambient lighting around it, creating an elegant visual effect.</p>
+                </div>
+                <button class="2 btn  w-100 btn-dark  p-2" data-value="category2" type="button" data-description="Drinkware"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">Inquire</button>
+              </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card p-2" id="Stainless-gold">
+             <img src="../images/Drinkware//Picture4.jpg" class="category2"alt="" srcset="" id="img-light"  data-filter="category2"  data-value="category2" data-id="4" data-description="Drinkware"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture5.jpg" class="category2" alt="" srcset=""  data-value="category2"  data-id="5"  data-description="Drinkware"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Square" data-id="5" >
+            </div>
+          </div>
+
+          
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2" id="Stainless-gold">
+             <img src="../images/Drinkware/Picture6.jpg" class="category2" alt="" srcset=""  data-value="category2"  data-id="6" data-description="Drinkware"  data-price="100"  data-color="Sliver & Gold" data-material="304 Stainless" data-size="9 & 6.5Liters"  data-shape="Square" data-id="6">
+            </div>
+          </div>
+           <!-- end of secod session -->
+
+         <!-- This is the third  segment  -->
+          <div class="mt-3 col-lg-3">
+            <div class="" id="pro-info-card">
+                <div class="description1">
+                  <h5>Square Chaffing <span  class="text-success">Dishes</span></h5>
+                  <p data-value="category3">Whether you are hosting a special occasion or looking for unique equipment to host a family gathering, this aesthetically pleasing chafing dish with a glass viewing window for easy visibility with a smooth opening and closing, will hold and display your food in a grand style.</p>
+                </div>
+                <button class="3 btn  w-100 btn-dark   p-2"   data-value="category3"  type="button"  data-description="Drinkware"  data-price="105"  data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="7">Inquire</button>
+              </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture7.jpg" class="category3  "alt="" srcset="" data-filter="category3" data-value="category3"    data-description="Drinkware"  data-price="105"  data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="7">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture8.jpg" class="category3" alt="" srcset=""  data-value="category3"   data-description="Drinkware" data-price="180"  data-color="Sliver" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Round"  data-id="8">
+            </div>
+          </div>
+
+          
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture9.jpg" class="category3" alt="" srcset=""  data-value="category3"  data-description="Drinkware" data-price="10" data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="9">
+            </div>
+          </div>
+          <!-- end of third session -->
+
+
+          <!-- This is the fourth session  -->
+          <div class="mt-3 col-lg-3">
+            <div class=""id="pro-info-card">
+                <div class="description1">
+                  <h4>Serving <span  class="text-success">Thong</span></h4>
+                  <p  data-value="category4">Complete your buffet station with this irresistible high-end Roswell Tong, designed for maximum comfort, featuring a finely balanced handle and a perfectly processed edge.  The natural shine of its smooth texture, made of high-quality mirror-finish stainless steel catches the eye.</p>
+                </div>
+                <button class="4 btn btn w-100 btn-dark   p-2" data-value="category4" type="button" data-description="Drinkware"  data-price="20" data-color="Sliver" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="10">Inquire</button>
+              </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture10.jpg" class="category4" alt="" srcset="" data-filter="category4" data-value="category4"  data-description="Drinkware"  data-price="20" data-color="Sliver" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="10">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture11.jpg" class="category4"  alt="" srcset=""  data-value="category4" data-description="Drinkware"  data-price="80" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="11">
+            </div>
+          </div>
+
+          
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture12.jpg" class="category4"  alt="" srcset=""  data-value="category4" data-description="Drinkware"  data-price="40" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="12">
+            </div>
+          </div>
+          <!-- end of fourth session -->
+
+        <!-- This is the fifth session  -->
+          <div class="mt-3 col-lg-3">
+            <div class="" id="pro-info-card">
+                <div class="description1">
+                  <h5>3-Platter<span  class="text-success"> Stand</span></h5>
+                  <p   data-value="category5">Broaden the horizon of your food presentation with our Roswell Series of this 3-Tier ceramic display. It is designed with style in mind.  It is an elegant stand that brings a modern look to the piece, while optimizing visibility from all angles</p>
+                </div>
+                <button class="5 btn btn w-100 btn-dark   p-2"  data-value="category5" type="button"     data-description="Drinkware"  data-price="10" data-color="white" data-material="304-Stainless" data-size="(weight)"  data-shape=""  data-id="13">Inquire</button>
+              </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture13.jpg" class="category5"  alt="" srcset=""  data-filter="category5" data-value="category5"  data-description="Drinkware"  data-price="10" data-color="white" data-material="304-Stainless" data-size="(weight)"  data-shape=""  data-id="13">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture14.jpg" class="category5"  alt="" srcset=""  data-value="category5"  data-description="Drinkware"  data-price="60" data-color="white" data-material="304-Stainless" data-size="(weight)"  data-shape=""  data-id="14">>
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture15.jpg" class="category5"  alt="" srcset=""  data-filter="category5" data-value="category5"data-description="Drinkware"data-price="10" data-color="Sliver" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="15">
+            </div>
+          </div>
+
+
+        </div>
+        
+        <div class="row">
+          <div class="mt-3 col-lg-3">
+            <div class="" id="pro-info-card">
+                <div class="description1">
+                  <h4>Serving<span  class="text-success"> Spoon</span></h4>
+                  <p   data-value="category6">Serve up your favorite party foods, and more with the elegance of Roswell Series serving spoon, featuring a contemporary design in a sleek mirror-finish.  You can count on this stylish and high-end serving spoon to suit you needs.
+                  </p>
+                </div>
+                <button class="6 btn btn w-100 btn-dark   p-2" data-value="category6" type="button" data-description="Drinkware"data-price="10" data-color="Sliver" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="15">Inquire</button>
+              </div>
+          </div>
+
+
+          
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture16.jpg" class="category6"  alt="" srcset=""  data-filter="category6" data-value="category6"data-description="Drinkware"data-price="10" data-color="Sliver" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="15">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture17.jpg" class="category6"  alt="" srcset=""  data-value="category6"  data-description="Drinkware"  data-price="70" data-color="Gold" data-description="Drinkware"  data-price="70" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="16">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture18.jpg" class="category6"  alt="" srcset=""  data-value="category6"  data-description="Drinkware"  data-price="70" data-color="Gold" data-description="Drinkware"  data-price="70" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="16">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Drinkware/Picture19.jpg" class="category6"  alt="" srcset=""  data-value="category6"  data-description="Drinkware"  data-price="70" data-color="Gold" data-description="Drinkware"  data-price="70" data-color="Gold" data-material="304-Stainless" data-size="10 inches"  data-shape=""  data-id="16">
+            </div>
+          </div>
+
+
+
+        </div>
+    </section>
+    
+
+  
+
+     <!-- footer -->
+     <footer class="footer bg-dark text-white pt-5 pb-4 mt-4">
+        <div class="container  text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">For You</h5>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Log in/register</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">track your order</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">My account</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">What's New</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Saved Carts</a></p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About US</h5>
+                    <p><a href=""  style="text-decoration: none;" class="text-white">bout party rental ltd</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Designs studio locations</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Warehouse location</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Testimoniaks</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Blogs</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Sustainiability</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Covid Advisory</a></p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Online help</h5>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Hippo Help center</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Event Rental inspirations</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Product instuctionals video</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Order linel swiches</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Event rental Glossary</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Brand Resources</a></P>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us </h5>
+                        <p><a href="" style="text-decoration: none;" class="text-white">Live Chat</a></p>
+                </div>
+            </div>
+            <div class="form w-50  bg-light p-4 mx-lg-auto">
+              <label for="email" class="text- text-dark font-weight-bold ">Join the world of party rentals</label>
+              <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+              <button type="submit" class="btn btn-dark mt-2">Submit</button>
+              <small id="emailHelpId" class="form-text text-muted">Help text</small>
+            </div>
+            <div class="social-handles w-50 mt-4 mx-lg-auto">
+                <h5 class="text-uppercase text-center">Hang out with us</h5>
+                <div class="mx-lg-auto w-100 w-lg-100 text-warning text-center">
+                 <a href=""><i class="fab fa-youtube"></i></a>
+                 <a href=""><i class="fab fa-twitter"></i></a>
+                 <a href=""><i class="fab fa-instagram"></i></a>
+                 <a href=""><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/cart.js"></script>
+
+
+</body>
+</html>
