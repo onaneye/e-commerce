@@ -109,7 +109,9 @@ $(document).ready(function() {
     
 	}
 	});
+	$("#pro-info-card	p").su
 
+	document.querySelectorAll("#pro-info-card	p").substt
 	
 	// when inquire button is clicked, this is the function that loads
 	$("#pro-info-card	.btn").click(function () {
