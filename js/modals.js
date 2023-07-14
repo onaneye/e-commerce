@@ -109,24 +109,38 @@ $(document).ready(function() {
     
 	}
 	});
-	$("#pro-info-card	p").su
 
-	document.querySelectorAll("#pro-info-card	p").substt
-	
-	// when inquire button is clicked, this is the function that loads
-	$("#pro-info-card	.btn").click(function () {
-			var category = $(this).attr("class")[0];   // get category of clicked image
-			console.log(category)
-			var filterValue = $(this).data('value'); 
-			var	filterImages	=	$(this).closest('body').find('.card	img').filter('[data-filter="'	+	filterValue	+	'"]');
-			// when inquire button is clicked, it	loads	filterTEXT	in	description
-			 $(this).closest('body').find('.description1 p').each(function () {
-				if ($(this).data('value')	===	filterValue) {
-				var	text=	$(this).text()
-				$('#description-text').text(text)
-					console.log(text)
-				}
-			});
+
+// Get all the <p> elements with the class "description1"
+		const descriptionParagraphs = document.querySelectorAll('.description1 p');
+
+		// Iterate over each <p> element
+		descriptionParagraphs.forEach((paragraph) => {
+		const fullText = paragraph.textContent.trim(); // Get the full text
+		const maxLength = 249; // Define the maximum length for the substring
+		const substring = fullText.substring(0, maxLength); // Extract the substring
+		paragraph.textContent = substring + "....."; // Update the content of the <p> element
+		});
+
+
+		// when inquire button is clicked, this is the function that loads
+		$("#pro-info-card .btn").click(function () {
+		var paragraph = $(this).closest('.pro-info-card').find('.description1 p');
+		paragraph.text(paragraph.data("value")); // Show the full text
+		console.log(paragraph)
+		var category = $(this).attr("class").split(' ')[0]; // get category of clicked image
+		console.log(category);
+		var filterValue = $(this).data('value');
+		var filterImages = $(this).closest('body').find('.card img').filter('[data-filter="' + filterValue + '"]');
+		// when inquire button is clicked, it loads filterTEXT in description
+		$(this).closest('body').find('.description1 p').each(function () {
+			if ($(this).data('value') === filterValue) {
+			var text = $(this).text();
+			$('#description-text').text(text);
+			console.log(text);
+			}
+		});
+
 
 			// when inquire button is clicked, it	loads	filter	modal	images	in	description
 			filterImages.each(function () {
@@ -247,4 +261,10 @@ $('#btn-estimate').click(function() {
 $('#btn-shop').click(function(){
 	location.reload()
 })
+
+
+
+
+
+
 
