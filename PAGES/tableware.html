@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chargers:home</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2377a3245e.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  .card{
+    height: 100%    !important;
+    width: 100% !important;
+}
+
+</style>
+<body>
+   
+
+<!-- The Modal -->
+
+<div class="superNav border-bottom py-2 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+        <select  class="me-3 border-0 bg-light">
+          <option value="en-us">EN-US</option>
+        </select>
+        <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>info@somedomain.com</strong></span>
+        <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i> <strong>1-800-123-1234</strong></span>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+        <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted" href="#">Shipping</a></span>
+        <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted" href="#">Policy</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>POSH 'N' SPICE</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+      <div class="input-group">
+        <span class="border-dark input-group-text bg-dark text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" class="form-control border-dark" style="color:#7a7a7a">
+        <button class="btn btn-dark text-white">Search</button>
+      </div>
+    </div>
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="ms-auto d-none d-lg-block">
+        <div class="input-group">
+          <span class="border-dark input-group-text bg-dark text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="text" class="form-control border-dark" style="color:#7a7a7a">
+          <button class="btn btn-dark text-white">Search</button>
+        </div>
+      </div>
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 text-uppercase" href="./product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 text-uppercase" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 text-uppercase" href="#">About</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link  text-uppercase" href="./cart.html"><i class="fa-solid fa-cart-shopping me-1"></i> Cart <span class="cart-value  cartqty bg-success  text-white  text-center" id="cartqty">0</span></a>
+          
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="myModal" class="m">
+  <!--   successMODAL -->
+  <div class="bg-success  product-added">
+     <p  class="text-white fw-bold p-3">product added to your cart</p>
+ </div>
+ <span class="close  fas fa-xmark"></span>
+  <!-- Modal content -->
+  <div class="m-content"  id="m-content">
+    <div class="d-lg-flex d-md-block">
+     <div class="w-50 modal-img-container">
+          <img src="" id="modal-img" class="" alt="" srcset=""><br>
+          <div class="d-flex  flex-wrap col-lg-6 related-img-container">
+             <img src="../images/Table-ware/Picture1.jpg" alt=""  class="related-img  category1 1"   id="related-img"    data-description="Chargers" data-price="10" data-color="Gold" data-material="304 Stainless Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Table-ware/Picture2.png" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Chargers "  data-price="19"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Square">
+             <img src="../images/Table-ware/Picture3.png" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Chargers"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Table-ware/Picture4.png" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Chargers"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Table-ware/cat1.png" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Chargers"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Table-ware/cat2.png" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Chargers"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Table-ware/cat3.png" alt=""  class="related-img  category1 1"   id="related-img"   data-description="Chargers"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+             <img src="../images/Table-ware/Picture12.png" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Chargers"  data-price="1O" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">
+             <img src="../images/Table-ware/Picture13.png" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Chargers"  data-price="1O" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">
+             <img src="../images/Table-ware/Picture14.png" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Chargers"  data-price="1O" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">
+             <img src="../images/Table-ware/Picture10.png" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Chargers"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Square" data-id="5">
+             <img src="../images/Table-ware/Picture6.png" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Chargers"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Square" data-id="5">
+             <img src="../images/Table-ware/Picture11.png" alt=""  class="related-img  category2 2"   id="related-img"    data-description="Chargers"  data-price="100"  data-color="Sliver & Gold" data-material="304 Stainless" data-size="9 & 6.5Liters"  data-shape="Square" data-id="6">
+             <img src="../images/Table-ware/Picture7.png" alt=""  class="related-img  category3 3"   id="related-img"    data-description="Chargers"  data-price="105"  data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="7">
+             <img src="../images/Table-ware/Picture8.png" alt=""  class="related-img  category3 3"   id="related-img"    data-description="Chargers"  data-price="105"  data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="7">
+             <img src="../images/Table-ware/Picture16.png" alt=""  class="related-img  category3 3"   id="related-img"   data-description="Chargers" data-price="180"  data-color="Sliver" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Round"  data-id="8">
+          </div>
+     </div>
+
+     <div class="m-4  ">
+        <div  class="product-information">
+           <h2>ADD THIS PRODUCT TO YOUR CART</h2><h3  class="text-success information-name"></h3><span><p class="text-success fw-bold"  id="price"></p></span>
+          <div class="description P-3">
+             <p id="description-text" class="text-muted"></p>
+         </div> 
+         <table class="table table-striped">
+             <thead>
+               <tr>
+                 <th scope="col-2">Spec</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>Material</td>
+                 <td  id="material">Stainless steel</td>
+               </tr>
+               <tr>
+                 <td>Color</td>
+                 <td  id="color">Gold</td>
+               </tr>
+               <tr>
+                 <td  id="length">size</td>
+                 <td  id="size">6L</td>
+               </tr>
+                 <td>shape</td>
+                 <td  id="shape">Round</td>
+               </tr>
+             </tbody>
+           </table>
+
+              <div class="quantity">
+                 <div class="d-flex">
+                     <h5 class="font-weight-bold p-1">Quantity: </h5>
+                     <div class="qtySelector text-center">
+                         <i class="fa fa-minus decreaseQty bg-dark text-white"></i>
+                         <input type="text" class="qtyValue" value="6" />
+                         <i class="fa fa-plus increaseQty bg-dark text-white"></i>
+                     </div>              
+                 </div>
+                 <div class="mt-4">
+                 <button  class="btn btn-dark "  id="btn-estimate">ADD TO ESTIMATE</button>
+                 <button  class="btn btn-success "  id="btn-shop">CONTINUE  SHOPPING</button>
+                 </div>
+              </div> 
+        </div>
+      </div>  
+    </div>
+ </div>
+  </div>
+</div>
+
+
+    <!-- Product-items head information -->
+    <div class="bg-dark text-white d-flex justify-content-between align-items-center p-2 product-information">
+        <p class="pt-3">Price based on Date <strong>03/04/2023</strong> New york</p>
+        <p class="pt-3"><span class="fas fa-pen"></span>Edit</p>
+    </div>
+
+    <div class=" container mt-3 page-path">
+        <h6 class="text-muted">Home  > products  / <span class="text-success"> Chargers</span></h6>
+    </div>
+
+    <section class="container product-item-section p-2 mt-5">
+        <div class="product-title-head font-weight-bold">
+            <h3 class="font-weight-bold">Chargers</h3>
+        </div>
+
+        <div class="row">
+          <!-- start of first section -->
+          <div class="mt-3 col-lg-3">
+            <div class="gg" id="pro-info-card">
+              <div class="description1">
+                <h5>Chargers <span  class="text-success">Dishes</span></h5> 
+                <p data-value="category1">With glowing strands and beautiful texture, the Roswell Glass Gold, Brushstroke Charger Plate brings luster, glamour, and irresistibly Italian style to your table.  Add a touch of luxury to your next event with these stunning Gold Brushstroke Glass Charger Plates.  They are lightweight and highly decorative to make a bold statement and compliment your decors.
+                </p>
+              </div>
+             <button class="1 filter-btn btn m-0 w-100 btn-dark p-2"  data-value="category1"  type="button" data-description="Chargers" data-price="10" data-color="Gold" data-material="304 Stainless Steel" data-size="6.5 Liters"  data-shape="Round">Inquire</button>
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2 ">
+             <img src="../images/Table-ware/Picture1.jpg" class="category1"   id="category1"  alt="" srcset=""  data-filter="category1" data-value="category1"   data-description="Chargers" data-price="10" data-color="Gold" data-material="304 Stainless Steel" data-size="6.5 Liters"  data-shape="Round"> 
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Table-ware/Picture2.png" class="category1" alt="" srcset=""  data-value="category1"  data-id="2" data-description="Chargers "  data-price="19"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Square">
+            </div>
+          </div>
+          <!-- end of first session -->
+
+          
+          <div class="mt-3 col-lg-3"  data-filter="Stainless-gold">
+            <div class="card  p-2">
+             <img src="../images/Table-ware/Picture3.png" class="category1" alt="" srcset=""  data-value="category1"  data-id="3" data-description="Chargers"  data-price="10"  data-color="Gold" data-material="304 Stainless  Steel" data-size="6.5 Liters"  data-shape="Round">
+            </div>
+          </div>
+
+          <!-- This is the second segment  -->
+          <div class="mt-3 col-lg-3">
+            <div class="" id="pro-info-card">
+                <div class="description1">
+                  <h5>Square Chaffing <span  class="text-success">Dishes</span></h5>
+                    <p   data-value="category2">Looking for something unique and eye-catching for your next event? Check out our color varieties acrylic Roswell Charger Pates! These beautiful plates feature shiny metallic color that is sure to add touch of elegance to your event.  And with their stylish design, they are sure to elevate your place settings to the next level.  These Roswell Charger Plates Collections features in Gold, Rose Gold, and Silver.
+                    </p>
+                </div>
+                <button class="2 btn  w-100 btn-dark  p-2" data-value="category2" type="button" data-description="Chargers"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">Inquire</button>
+              </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card p-2" id="Stainless-gold">
+             <img src="../images/Table-ware/Picture4.png" class="category2"alt="" srcset="" id="img-light"  data-filter="category2"  data-value="category2" data-id="4" data-description="Chargers"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless  Steel" data-size="9 Liters"  data-shape="Square" data-id="4">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Table-ware/Picture5.png" class="category2" alt="" srcset=""  data-value="category2"  data-id="5"  data-description="Chargers"  data-price="10" data-color="Sliver & Gold" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Square" data-id="5" >
+            </div>
+          </div>
+
+          
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2" id="Stainless-gold">
+             <img src="../images/Table-ware/Picture6.png" class="category2" alt="" srcset=""  data-value="category2"  data-id="6" data-description="Chargers"  data-price="100"  data-color="Sliver & Gold" data-material="304 Stainless" data-size="9 & 6.5Liters"  data-shape="Square" data-id="6">
+            </div>
+          </div>
+           <!-- end of secod session -->
+
+         <!-- This is the third  segment  -->
+          <div class="mt-3 col-lg-3">
+            <div class="" id="pro-info-card">
+                <div class="description1">
+                  <h5>Square Chaffing <span  class="text-success">Dishes</span></h5>
+                  <p data-value="category3">Add style and sophistication to your special event with these Roswell Charger Plates Collections.  Grace your table with these unique and modern scalloped gold rim black charger plates and excite your guest’s appetite.  Because it is not just the food that sets the mood, it is the presentation.
+                    .</p>
+                </div>
+                <button class="3 btn  w-100 btn-dark   p-2"   data-value="category3"  type="button"  data-description="Chargers"  data-price="105"  data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="7">Inquire</button>
+              </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Table-ware/Picture7.png" class="category3  "alt="" srcset="" data-filter="category3" data-value="category3"    data-description="Chargers"  data-price="105"  data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="7">
+            </div>
+          </div>
+
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Table-ware/Picture8.png" class="category3" alt="" srcset=""  data-value="category3"   data-description="Chargers" data-price="180"  data-color="Sliver" data-material="304 Stainless" data-size="6.5 Liters"  data-shape="Round"  data-id="8">
+            </div>
+          </div>
+
+          
+          <div class="mt-3 col-lg-3">
+            <div class="card  p-2">
+             <img src="../images/Table-ware/Picture16.png" class="category3" alt="" srcset=""  data-value="category3"  data-description="Chargers" data-price="10" data-color="Sliver" data-material="304 Stainless" data-size="9 Liters"  data-shape="Round"  data-id="9">
+            </div>
+          </div>
+          <!-- end of third session -->
+    </section>
+    
+
+  
+
+     <!-- footer -->
+     <footer class="footer bg-dark text-white pt-5 pb-4 mt-4">
+        <div class="container  text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">For You</h5>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Log in/register</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">track your order</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">My account</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">What's New</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Saved Carts</a></p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About US</h5>
+                    <p><a href=""  style="text-decoration: none;" class="text-white">bout party rental ltd</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Designs studio locations</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Warehouse location</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Testimoniaks</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Blogs</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Sustainiability</a></p>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Covid Advisory</a></p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Online help</h5>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Hippo Help center</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Event Rental inspirations</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Product instuctionals video</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Order linel swiches</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Event rental Glossary</a></P>
+                    <p><a href="" style="text-decoration: none;" class="text-white">Brand Resources</a></P>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us </h5>
+                        <p><a href="" style="text-decoration: none;" class="text-white">Live Chat</a></p>
+                </div>
+            </div>
+            <div class="form w-50  bg-light p-4 mx-lg-auto">
+              <label for="email" class="text- text-dark font-weight-bold ">Join the world of party rentals</label>
+              <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+              <button type="submit" class="btn btn-dark mt-2">Submit</button>
+              <small id="emailHelpId" class="form-text text-muted">Help text</small>
+            </div>
+            <div class="social-handles w-50 mt-4 mx-lg-auto">
+                <h5 class="text-uppercase text-center">Hang out with us</h5>
+                <div class="mx-lg-auto w-100 w-lg-100 text-warning text-center">
+                 <a href=""><i class="fab fa-youtube"></i></a>
+                 <a href=""><i class="fab fa-twitter"></i></a>
+                 <a href=""><i class="fab fa-instagram"></i></a>
+                 <a href=""><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/cart.js"></script>
+
+
+</body>
+</html>
