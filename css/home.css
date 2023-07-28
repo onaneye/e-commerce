@@ -86,6 +86,10 @@ body{
     text-decoration: none;
 }
 
+.card img{
+  height: auto;
+}
+
 
 
 
