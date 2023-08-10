@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     $('.carts   .cart-body').html(itemsHtml);
     $('#total-text-price').text('$' + total.toFixed(2));
-    $('.cart-value').text("$"+total)
+    $('.cart-value').text(cart.length)
     localStorage.setItem("total",  total)
     if (cart.length>1) {
       $('.cart-items').text(cart.length + " " +"items")
