@@ -41,6 +41,37 @@ a:hover{
     color: black !important;
 }
 
+/* Reset default styles */
+body, div, i, span {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the cart icon container */
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+/* Style the cart icon */
+.cart-icon i {
+  color: #333; /* Change the color as needed */
+}
+
+/* Style the item count badge */
+.item-count {
+  position: absolute;
+  top: -8px; /* Adjust the vertical position as needed */
+  right: -8px; /* Adjust the horizontal position as needed */
+  background-color: #16A9EE; /* Background color of the badge */
+  color: #fff; /* Text color of the badge */
+  border-radius: 50%; /* Make the badge circular */
+  padding: 4px 8px; /* Adjust padding as needed */
+  font-size: 12px; /* Adjust the font size as needed */
+}
+
+
 a  div#cartqty{
     border-radius: 50%  !important;
     width: 70px !important;

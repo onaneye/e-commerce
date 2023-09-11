@@ -73,18 +73,38 @@
             <a class="nav-link mx-2 text-uppercase" href="#">About</a>
           </li>
         </ul>
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item">
-            <a class="nav-link  text-uppercase" href="./PAGES/cart.html"><i class="fa-solid fa-cart-shopping me-1"></i> Cart <span class="cart-value  cartqty bg-success  text-white  text-center" id="cartqty">0</span></a>
-            
-          </li>
-          
+        <ul class="navbar-nav ms-auto"> 
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="item-count cart-value">0</span>
+          </div>
+          <span class="price-count m-2 text-success">$0</span>
         </ul>
       </div>
     </div>
   </nav>
   
     <!-- <nav class="d-lg-flex  justify-content-between align-items-center mb-3 nav-bg">
+
+       <li class="nav-item">
+           <div><a class="nav-link  text-uppercase" href="./PAGES/cart.html"><i class="fa-solid fa-cart-shopping me-1"  style="font-size:24px"></i>
+            <span class="cart-value  cartqty " 
+            style="width: 30px;
+                height: 10px;
+                padding: 15.2px 7.8px;
+                font-size: 17px;
+                border-radius: 26px;
+                transform: perspective(0px) translate(-8px) rotate(0deg) scale(0.50);
+                transform-origin: top;
+                padding-right: 0;
+                padding-top: 0.2px;
+                padding-left: 0.2px;
+                text-align: center;border-width: 48px;"
+                id="">0</span>
+              </a>
+             </div>
+          </li>
+          
         <div class="show-menu pb-2">
             <a href="./index.html"><h5 class=""> <i class="fas fa"></i> Home</h5></a>
             <div class="nav-col-item" id="collapse">
