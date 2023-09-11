@@ -64,7 +64,7 @@ body, div, i, span {
   position: absolute;
   top: -8px; /* Adjust the vertical position as needed */
   right: -8px; /* Adjust the horizontal position as needed */
-  background-color: #16A9EE; /* Background color of the badge */
+  background-color: #1086bd; /* Background color of the badge */
   color: #fff; /* Text color of the badge */
   border-radius: 50%; /* Make the badge circular */
   padding: 4px 8px; /* Adjust padding as needed */
