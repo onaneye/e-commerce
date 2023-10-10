@@ -232,9 +232,192 @@ div.btndiv{
     margin: 10px 20px 40px;
 }
 
+/* /////////////////////////////////////////////////////////////////////
+                slider
+//////////////////////////////////////////////////////////////////////*/
+.contain{
+  margin-top: 25px;
+  max-width: 1200px;
+  width: 95%;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 225px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+/* Add styles for the hover effect, clickable love icon, and "See More" link */
+.slider-wrapper .image-list .image-item {
+  position: relative;
+}
+
+.slider-wrapper .image-list .image-item .image-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.slider-wrapper .image-list .image-item:hover .image-hover {
+  opacity: 1;
+}
+
+.slider-wrapper .image-list .image-item .image-hover i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slider-wrapper .image-list .image-item .image-hover .see-more-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Add styles for the love icon and "See More" link */
+.slider-wrapper .image-list .image-item .image-hover i {
+  cursor: pointer;
+}
+
+/* Add styles for the "See More" link */
+.slider-wrapper .image-list .image-item .image-hover .see-more-link {
+  color: #ff5733;
+}
+
+/* Add hover effect for the "See More" link */
+.slider-wrapper .image-list .image-item .image-hover .see-more-link:hover {
+  text-decoration: underline;
+  color: #ff4500;
+}
 
 
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
 
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+}
  /* /////////////////////////////////////////////////////////////////////
                 footer
 //////////////////////////////////////////////////////////////////////*/
