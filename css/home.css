@@ -211,6 +211,49 @@ div.btndiv{
 	bottom: 1px;
 	width: 100px;
  }
+ .about_section{
+  margin-top: 20px;
+
+ }
+
+ .about_section .img_container .img-box img {
+  width: 100%;
+}
+
+.about_section .detail-box {
+  background-color: #ffffff;
+  padding: 45px 25px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-left: -45px;
+}
+
+.about_section .detail-box p {
+  margin-top: 5px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #f1db25;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+.about_section .detail-box a:hover {
+  background-color: transparent;
+  border-color: #f1db25;
+  color: #f1db25;
+}
+
+.service_section {
+  background-color: #1c1c1c;
+}
+
 
  /* /////////////////////////////////////////////////////////////////////
                 contact banner
@@ -296,6 +339,12 @@ div.btndiv{
   width: 225px;
   height: 500px;
   object-fit: cover;
+  border-radius: 20px;
+}
+
+.slider-wrapper .image-list .image-item:hover {
+  background-color: #1086bd;
+  opacity: 0.2;
 }
 
 .container .slider-scrollbar {
@@ -366,34 +415,9 @@ div.btndiv{
   height: 100%;
 }
 
-.slider-wrapper .image-list .image-item:hover .image-hover {
-  opacity: 1;
-}
-
-.slider-wrapper .image-list .image-item .image-hover i {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.slider-wrapper .image-list .image-item .image-hover .see-more-link {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Add styles for the love icon and "See More" link */
-.slider-wrapper .image-list .image-item .image-hover i {
-  cursor: pointer;
-}
-
-/* Add styles for the "See More" link */
-.slider-wrapper .image-list .image-item .image-hover .see-more-link {
-  color: #ff5733;
-}
-
-/* Add hover effect for the "See More" link */
-.slider-wrapper .image-list .image-item .image-hover .see-more-link:hover {
-  text-decoration: underline;
-  color: #ff4500;
+.love{
+  position: absolute;
+  top: 50%;
 }
 
 
